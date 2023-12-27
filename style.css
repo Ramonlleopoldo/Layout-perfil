@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --text_color: #fff;
+  --bg-img: url(./assets/bg-desktop.jpg);
+  --border-color: #ffffff50;
+  --bg-color: #ffffff10;
+  --bg-color-hover: #ffffff05;
+  --bg-color-hover-icones: #ffffff20;
+  --Switch: url(./assets/switch-dark.svg);
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text_color);
+}
+body {
+  background-image: var(--bg-img);
+  background-size: cover;
+  height: 100vh;
+}
+.light {
+  --text_color: #000;
+  --bg-img: url(./assets/bg-desktop-light.jpg);
+  --border-color: #00000050;
+  --bg-color: #00000010;
+  --bg-color-hover: #00000005;
+  --bg-color-hover-icones: #00000020;
+}
+.container {
+  padding-top: 20px;
+  width: 360px;
+  margin: auto;
+}
+/*perfil*/
+.perfil {
+  text-align: center;
+}
+.perfil img {
+  width: 112px;
+}
+.perfil p {
+  padding-top: 8px;
+  padding-bottom: 15px;
+}
+/*Switch*/
+.switch {
+  padding: 10px;
+  position: relative;
+  width: 64px;
+  margin: auto;
+}
+.switch button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white var(--Switch) center no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  border: 0;
+  cursor: pointer;
+}
+.switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  border: solid var(--border-color) 1px;
+  border-radius: 9999px;
+  background: var(--bg-color);
+  margin: auto;
+}
+.light .switch button {
+  --Switch: url(./assets/switch-light.svg);
+  right: 0;
+  left: initial;
+}
+/*listas*/
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  text-align: center;
+}
+.links li a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-color);
+  padding: 16px 24px;
+  transition: 0.5s;
+}
+.links li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--text_color);
+}
+/*icones*/
+.icones {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+ion-icon {
+  font-size: 24px;
+  color: var(--text_color);
+  padding: 10px 10px;
+}
+.icones li a:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: var(--bg-color-hover-icones);
+}
