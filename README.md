@@ -9,4 +9,4 @@
 <li>JAVASCRIPT</li>
 </ul>
 
-<a href="https://ramonlleopoldo.github.io/Layout-perfil/">ACESSE O SITE CLICANDO AQUI</a>
+<a href="https://ramonlleopoldo.github.io/Layout-perfil/" target="_blank">ACESSE O SITE CLICANDO AQUI</a>
